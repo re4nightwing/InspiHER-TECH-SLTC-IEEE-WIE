@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InspiHER{Tech} | IEEE WIE of SLTC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .profile-menu .dropdown-menu {
+            right: 0;
+            left: unset;
+        }
+        .profile-menu .fa-fw {
+            margin-right: 10px;
+        }
+        .toggle-change::after {
+            border-top: 0;
+            border-bottom: 0.3em solid;
+        }
+        .navbar{
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            z-index: 100;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            font-family: "Roboto";
+        }
+        .navbar-brand{
+            font-weight: 100;
+        }
+        .nav-item{
+            font-weight: 500;
+            letter-spacing: 3px;
+        }
+        .bg-purple{
+            background-color: #2a1144;
+        }
+        .bg-pink-half{
+            background-color: #b9009a9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">InspiHer{TECH}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Latest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu"> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us <i class="fas fa-address-book text-primary"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-users text-warning"></i> Staff</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fab fa-github text-success"></i> Git Repo </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+
+    <!--Code goes here-->
+    <img src="https://cms-assets.tutsplus.com/uploads/users/107/posts/26488/final_image/41-space-scrolling-background850-2.jpg" alt="">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).scroll(function() { 
+        if($(window).scrollTop() === 0) {
+            $(".navbar").removeClass('bg-pink-half');
+            $(".navbar").addClass('bg-purple');
+        } else{
+            $(".navbar").removeClass('bg-purple');
+            $(".navbar").addClass('bg-pink-half');
+        }
+    });
+
+document.querySelectorAll('.dropdown-toggle').forEach(item => {
+  item.addEventListener('click', event => {
+ 
+    if(event.target.classList.contains('dropdown-toggle') ){
+      event.target.classList.toggle('toggle-change');
+    }
+    else if(event.target.parentElement.classList.contains('dropdown-toggle')){
+      event.target.parentElement.classList.toggle('toggle-change');
+    }
+  })
+});
+</script>
+</html>
