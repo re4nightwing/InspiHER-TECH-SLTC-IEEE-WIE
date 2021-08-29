@@ -281,6 +281,9 @@
             .carousel-caption-center h2{
                 font-size: 40px;
             }
+            .timeline-event-copy h3 {
+                font-size: 1em;
+            }
         }
         .prize-card-lg{
             background-color: #fff;
@@ -485,8 +488,8 @@
         </div>
         <div class="container">
             <div class="row justify-content-around">
-                <div class="col-lg-4 col-md-6 col-10">
-                    <img data-aos="flip-left" src="img/vision.svg" class="img-fluid" alt="">
+                <div data-aos="zoom-in" class="col-lg-4 col-md-6 col-10">
+                    <img src="img/vision.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 col-md-6 col-10 vision-content">
                     <div class="vision-text">
@@ -512,8 +515,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-10" style="position: relative;">
-                    <img data-aos="flip-right" src="img/mission.svg" class="img-fluid mission-img" alt="">
+                <div data-aos="zoom-in" class="col-lg-4 col-md-6 col-10" style="position: relative;">
+                    <img src="img/mission.svg" class="img-fluid mission-img" alt="">
                 </div>
             </div>
         </div>
@@ -655,7 +658,7 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <button class="accordion-button collapsed" id="rules" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             Rules and Guidelines
                         </button>
                     </h2>
@@ -790,6 +793,9 @@
 </body>
 <script>
     AOS.init();
+    $( document ).ready(function() {
+        $('#rules').click();
+    });
 </script>
 <script>
     $(document).scroll(function() { 
