@@ -117,6 +117,31 @@
             background: #fff;
             color: #000;
         }
+        .count-box{
+            color: #fff;
+            background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );;
+            border: 6px solid #8f52cc;
+            border-radius: 40px;
+            text-align: center;
+            height: 220px;
+            position: relative;
+            box-shadow: inset -2px -2px 8px 0px #0000008a;
+            padding-top: 20px;
+        }
+        .time{
+            font-size: 4rem;
+            font-family: 'Press Start 2P';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .date{
+            margin-top: 15px;
+            font-size: 25px;
+            font-family: 'Anonymous Pro';
+            font-weight: bold;
+        }
         .wie-bar{
             background-color: #581699;
             width: 60px;
@@ -179,7 +204,34 @@
             border-radius: 20px;
             transform: translateY(50px);
         }
+        @media (max-width: 1399.98px) {
+            .count-box{
+                height: 190px;
+                padding-top: 10px;
+            }
+        }
+        @media (max-width: 1199.98px) {
+            .count-box{
+                height: 160px;
+                padding-top: 6px;
+            }
+            .time{
+                font-size: 3rem;
+            }
+            .date{
+                margin-top: 15px;
+                font-size: 20px;
+                font-family: 'Anonymous Pro';
+                font-weight: bold;
+            }
+        }
         @media (max-width: 991.98px) {
+            .count-box{
+                height: 200px;
+                width: 200px;
+                padding-top: 15px;
+                margin-bottom: 10px;
+            }
             .mission-row{
                 height: 400px;
             }
@@ -329,7 +381,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us <i class="fas fa-address-book text-primary"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#"><i class="fas fa-users text-warning"></i> Staff</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fab fa-github text-success"></i> Git Repo </a></li>
+                            <li><a class="dropdown-item" href="https://github.com/re4nightwing/InspiHER-TECH-SLTC-IEEE-WIE" target="_blank"><i class="fab fa-github text-success"></i> Git Repo </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -376,6 +428,38 @@
         </button>
       </div>
     </header>
+    <div class="countdown-section">
+        <div class="container">
+            <div class="text-center sec-heading pt-5">
+                <h2 style="color: var(--text-purple);">Remaining Time for the Competition</h2>
+            </div>
+            <div class="countdown-display mt-5">
+                <div class="countdown-content">
+                    <div class="row justify-content-around">
+                        <div class="col-lg-2 col-md-5 col-10 count-box">
+                            <span class="time" id="days"></span>
+                            <span class="date">Days</span>
+                        </div>
+
+                        <div class="col-lg-2 col-md-5 col-10 count-box">
+                            <span class="time" id="hours"></span>
+                            <span class="date">Hours</span>
+                        </div>
+
+                        <div class="col-lg-2 col-md-5 col-10 count-box">
+                            <span class="time" id="minutes"></span>
+                            <span class="date">Minutes</span>
+                        </div>
+
+                        <div class="col-lg-2 col-md-5 col-10 count-box">
+                            <span class="time" id="seconds"></span>
+                            <span class="date">Seconds</span>
+                        </div>
+                    </div>
+                </div>		
+            </div>
+        </div>
+    </div>
     <div data-aos="fade-up" id="about" class="about-section pt-5">
         <div class="text-center sec-heading pt-5">
             <h1 style="color: var(--text-purple);">What is InspiHER{Tech} V1.0?</h1>
@@ -729,5 +813,40 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
     }
   })
 });
+</script>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Sept 5, 2021 23:59:59").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+        // Get today's date and time
+        var now = new Date().getTime();
+            
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+            
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+        // Output the result in an element with id="demo"
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+            
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("days").innerHTML = "00";
+            document.getElementById("hours").innerHTML = "00";
+            document.getElementById("minutes").innerHTML = "00";
+            document.getElementById("seconds").innerHTML = "00";
+        }
+    }, 1000);
 </script>
 </html>
