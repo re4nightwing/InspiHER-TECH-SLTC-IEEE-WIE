@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GTEZRRVKR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9GTEZRRVKR');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,31 +68,32 @@
         }
 
         .carousel-item:nth-child(2) {
-            background-image: url('img/test2.jpg');
+            background-image: url('img/Slide2.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
         }
 
         .carousel-item:nth-child(3) {
-            background-image: url('https://mdbootstrap.com/img/Photos/Others/images/74.jpg');
+            background-image: url('img/Slide3.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
         }
         .carousel-caption-center{
             position: absolute;
-            width: 85vw;
+            width: 100vw;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
             font-family: 'Anonymous Pro';
-            color: var(--text-purple);
+            color: #c48aff;
         }
         .carousel-caption-center h1{
             font-weight: 700;
         }
         .carousel-caption-center h2{
+            color: var(--text-purple);
             margin-bottom: 0;
             font-family: 'Teko';
             font-size: 90px;
@@ -101,6 +110,13 @@
             background-color: #343942;
             border-radius: 8px;
             padding: 0px 4px 3px 4px;
+        }
+        .carousel-mask{
+            background-color: #2b292bdb;
+            border-radius: 100px;
+            width: 85vw;
+            margin-left: auto;
+            margin-right: auto;
         }
         .wie-neon-btn{
             background: #343942;
@@ -334,7 +350,19 @@
             opacity: 0;
             transition: 0.4s ease-out;
         }
+        .center-social-video{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 0.4s ease-out;
+        }
         .flyer-pane:hover .center-social{
+            opacity: 1;
+            text-shadow: 0px 0px 8px #fff;
+        }
+        .flyer-pane:hover .center-social-video{
             opacity: 1;
             text-shadow: 0px 0px 8px #fff;
         }
@@ -361,27 +389,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#top" id="hm">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about" id="abt">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#timeline">Timeline</a>
+                        <a class="nav-link" href="#timeline" id="tl">Timeline</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#prizes">Prizes</a>
+                        <a class="nav-link" href="#prizes" id="pr">Prizes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
+                        <a class="nav-link" href="#faq" id="fq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#latest">Latest</a>
+                        <a class="nav-link" href="#latest" id="lt">Latest</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu"> 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us <i class="fas fa-address-book text-primary"></i></a>
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us <i class="fas fa-address-book text-primary"></i></a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#"><i class="fas fa-users text-warning"></i> Staff</a></li>
                             <li><a class="dropdown-item" href="https://github.com/re4nightwing/InspiHER-TECH-SLTC-IEEE-WIE" target="_blank"><i class="fab fa-github text-success"></i> Git Repo </a></li>
@@ -400,24 +428,37 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption-center text-center px-4">
-                    <h2>InspiHER{Tech} V1.0</h2>
-                    <h4 class="mb-5 text-light">Hearten Empower Reinforce</h4>
-                    <a href="#register" class="wie-neon-btn mt-4"><span class="bx-flashing">Register Now</span></a>
+                    <div class="py-3 carousel-mask">
+                        <h2>InspiHER{Tech} V1.0</h2>
+                        <h4 class="mb-0 text-light">Hearten Empower Reinforce</h4>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="http://bit.ly/InspiHER_Reg" target="_blank" class="wie-neon-btn"><span class="bx-flashing">Register Now</span></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption-center text-center px-4">
-                    <h1 class="mb-5">Are you a <span class="git-code">female undergraduate</span> interested in the <span>science & technology</span> sector?</br>
+                    <div class="py-3 px-2 carousel-mask">
+                        <h1>Are you a <span class="git-code">female undergraduate</span> interested in the <span>science & technology</span> sector?</br>
                         <span class="git-code">Looking for a challenge</span> to show your <span class="git-code">amazing skills?</span></h1>
-                    <a href="#register" class="wie-neon-btn mt-4"><span class="bx-flashing">Register Now</span></a>
+                    </div>
+                    <div class="mt-5">
+                        <a href="http://bit.ly/InspiHER_Reg" target="_blank" class="wie-neon-btn mt-4"><span class="bx-flashing">Register Now</span></a>
+                    </div>
                 </div>
             </div>
           <div class="carousel-item">
             <div class="carousel-caption-center text-center px-4">
-                <h1 class="mb-5">The arena awaits you...</br>
+                <div class="py-3 px-2 carousel-mask">
+                    <h1>The arena awaits you...</br>
                     Dive into a world of Science and Technology with <span class="git-code">InspiHER{Tech} V1.0</span> and be a <span class="git-code">champion!</span>
-                </h1>
-                <a href="#register" class="wie-neon-btn mt-4"><span class="bx-flashing">Register Now</span></a>
+                    </h1>
+                </div>
+                <div class="mt-5">
+                    <a href="http://bit.ly/InspiHER_Reg" target="_blank" class="wie-neon-btn mt-4"><span class="bx-flashing">Register Now</span></a>
+                </div>
             </div>
           </div>
         </div>
@@ -531,7 +572,7 @@
               <div class="timeline-event-copy">
                 <p class="timeline-event-thumbnail">11<sup>th</sup> September 2021</p>
                 <h3>Opening Ceremony</h3>
-                <h4>time</h4>
+                <h4>---</h4>
                 <p>This will be the day for you to witness the inception of something utterly marvelous. Stay connected with us, and make sure you don’t miss out.</p>
               </div>
             </li>
@@ -540,7 +581,7 @@
               <div class="timeline-event-copy">
                 <p class="timeline-event-thumbnail">12<sup>th</sup> September 2021</p>
                 <h3>Proteus Workshop</h3>
-                <h4>time</h4>
+                <h4>---</h4>
                 <p>When going into battle, you need your armor readied and polished. So, what else is better than a little heads up for the upcoming competition? If you 
                     wish to join, you better have yourself registered before the deadline.</p>
               </div>
@@ -570,7 +611,7 @@
                 <div class="timeline-event-copy">
                     <p class="timeline-event-thumbnail">02<sup>nd</sup> October 2021</p>
                     <h3>Round 02 InspiHER{MindFest}</h3>
-                    <h4>time</h4>
+                    <h4>---</h4>
                     <p>This round is a technical quiz that will boost the technical knowledge as well as the general knowledge of the competitors. It will be an exhilarating battle of 
                         both knowledge and time.</p>
                 </div>
@@ -580,7 +621,7 @@
                 <div class="timeline-event-copy">
                     <p class="timeline-event-thumbnail">09<sup>th</sup> October 2021</p>
                     <h3>Round 03 InspiHER{CodeWars}</h3>
-                    <h4>time</h4>
+                    <h4>---</h4>
                     <p>The 3rd round of InspiHER{Tech} V1.0, is going to be a 6-hour long algorithmic coding competition. Held virtually, in this round the competitors are required to 
                         solve problems, utilizing their skills as much as possible.</p>
                 </div>
@@ -590,7 +631,7 @@
                 <div class="timeline-event-copy">
                     <p class="timeline-event-thumbnail">11<sup>th</sup> October 2021</p>
                     <h3>Closing Ceremony</h3>
-                    <h4>time</h4>
+                    <h4>---</h4>
                     <p>As all good things, this too must come to an end. We will leave this day to mark the conclusion of InspiHER{Tech} V1.0 organized by the IEEE WIE Affinity Group of SLTC.</p>
                 </div>
             </li>
@@ -605,17 +646,17 @@
                 <div class="col-lg-3 col-md-5 col-sm-7 col-9 my-1 py-4 px-2 prize-card hvr-bob text-center">
                     <img src="img/second.png" class="img-fluid p-4" alt="">
                     <h2>Second Place</h2>
-                    <h3>Rs.5,000</h3>
+                    <h3>Rs.20,000</h3>
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-7 col-9 my-1 py-4 px-2 prize-card-lg hvr-bob text-center">
                     <img src="img/first.png" class="img-fluid p-4" alt="">
                     <h2>First Place</h2>
-                    <h3>Rs.10,000</h3>
+                    <h3>Rs.25,000</h3>
                 </div>
                 <div class="col-lg-3 col-md-5 col-sm-7 col-9 my-1 py-4 px-2 prize-card hvr-bob text-center">
                     <img src="img/third.png" class="img-fluid p-4" alt="">
                     <h2>Third Place</h2>
-                    <h3>Rs.3,000</h3>
+                    <h3>Rs.15,000</h3>
                 </div>
             </div>
         </div>
@@ -679,7 +720,7 @@
             </div>
             <div class="text-center">
                 <p class="my-5 h5"><i>*You can refer to guidelines and more information from the handbook.</i></p>
-                <a href="#download" class="wie-neon-btn"><span class="bx-flashing">Download Handbook</span></a>
+                <a href="http://bit.ly/InspiHER_Handbook" target="_blank" class="wie-neon-btn"><span class="bx-flashing">Download Handbook</span></a>
             </div>
         </div>
     </div>
@@ -702,7 +743,7 @@
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/1W1cZDkMWz89Ay_XCWuumgIYP-VSGUJJZ/preview" allowfullscreen></iframe>
                     </div>
-                    <div class="center-social">
+                    <div class="center-social-video">
                         <span style="font-size: 1.5em;"><a href="https://www.facebook.com/109584857387214/posts/362164325462598/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></span>
                         <span style="font-size: 1.5em;"><a href="https://www.instagram.com/tv/CTAFfEbhIts/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></span>
                         <span style="font-size: 1.5em;"><a href="https://twitter.com/sltcieeewie/status/1430541371262259200?s=19" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></span>
@@ -722,16 +763,22 @@
                     <div class="ratio ratio-16x9">
                         <iframe src="https://drive.google.com/file/d/1KLjQ9VSiooMpXj4_WrL8Lkez5zwnr1Iv/preview" allowfullscreen></iframe>
                     </div>
-                    <div class="center-social">
+                    <div class="center-social-video">
                         <span style="font-size: 1.5em;"><a href="https://www.facebook.com/109584857387214/posts/360371515641879/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></span>
                         <span style="font-size: 1.5em;"><a href="https://www.instagram.com/p/CS4b2bIhcmy/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></span>
                         <span style="font-size: 1.5em;"><a href="https://twitter.com/sltcieeewie/status/1429467628322496518?s=19" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></span>
                         <span style="font-size: 1.5em;"><a href="https://www.linkedin.com/posts/ieee-wie-student-branch-affinity-group-of-sltc_ieee-wie-sltc-activity-6835235920757764096-Q9pg" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></span>
                     </div>
                 </div>
-                <!-- <div class="col-sm-6 col-lg-4 mb-4 flyer-pane" style="position: absolute; left: 0%; top: 362px;">
-                    
-                </div> -->
+                <div class="col-sm-6 col-lg-4 mb-4 flyer-pane" style="position: absolute; left: 0%; top: 362px;">
+                    <img src="img/registerNow.gif" class="img-fluid" alt="">
+                    <div class="center-social">
+                        <span style="font-size: 1.5em;"><a href="https://www.facebook.com/sltcwie/photos/a.359108549101509/364483608564003/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></span>
+                        <span style="font-size: 1.5em;"><a href="https://www.instagram.com/p/CTJT-_tHAAx/?utm_source=ig_web_copy_link" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></span>
+                        <span style="font-size: 1.5em;"><a href="https://twitter.com/sltcieeewie/status/1431889101209407490" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></span>
+                        <span style="font-size: 1.5em;"><a href="https://www.linkedin.com/posts/ieee-wie-student-branch-affinity-group-of-sltc_alucmvcmvcmv-cnvalucmv-prfamvcnpcms-activity-6837642689136140288-DIGs" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></span>
+                    </div>
+                </div>
                 <!-- <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 310px;">
                     <div class="card text-center">
                         <div class="card-body">
@@ -792,12 +839,15 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 </body>
 <script>
+    var abt_pos = $("#about").offset().top-150;
+    var tl_pos = $("#timeline").offset().top-150;
+    var pr_pos = $("#prizes").offset().top-150;
+    var fq_pos = $("#faq").offset().top-150;
+    var lt_pos = $("#latest").offset().top-150;
     AOS.init();
     $( document ).ready(function() {
         $('#rules').click();
     });
-</script>
-<script>
     $(document).scroll(function() { 
         if($(window).scrollTop() === 0) {
             $(".navbar").removeClass('bg-pink-half');
@@ -805,6 +855,49 @@
         } else{
             $(".navbar").removeClass('bg-purple');
             $(".navbar").addClass('bg-pink-half');
+        }
+        if($(window).scrollTop() < abt_pos){
+            $('#hm').addClass('active');
+            $('#abt').removeClass('active');
+            $('#tl').removeClass('active');
+            $('#pr').removeClass('active');
+            $('#fq').removeClass('active');
+            $('#lt').removeClass('active');
+        } else if($(window).scrollTop() > abt_pos && $(window).scrollTop() < tl_pos){
+            $('#hm').removeClass('active');
+            $('#abt').addClass('active');
+            $('#tl').removeClass('active');
+            $('#pr').removeClass('active');
+            $('#fq').removeClass('active');
+            $('#lt').removeClass('active');
+        } else if($(window).scrollTop() > tl_pos && $(window).scrollTop() < pr_pos){
+            $('#hm').removeClass('active');
+            $('#abt').removeClass('active');
+            $('#tl').addClass('active');
+            $('#pr').removeClass('active');
+            $('#fq').removeClass('active');
+            $('#lt').removeClass('active');
+        } else if($(window).scrollTop() > pr_pos && $(window).scrollTop() < fq_pos){
+            $('#hm').removeClass('active');
+            $('#abt').removeClass('active');
+            $('#tl').removeClass('active');
+            $('#pr').addClass('active');
+            $('#fq').removeClass('active');
+            $('#lt').removeClass('active');
+        } else if($(window).scrollTop() > fq_pos && $(window).scrollTop() < lt_pos){
+            $('#hm').removeClass('active');
+            $('#abt').removeClass('active');
+            $('#tl').removeClass('active');
+            $('#pr').removeClass('active');
+            $('#fq').addClass('active');
+            $('#lt').removeClass('active');
+        } else if($(window).scrollTop() > lt_pos){
+            $('#hm').removeClass('active');
+            $('#abt').removeClass('active');
+            $('#tl').removeClass('active');
+            $('#pr').removeClass('active');
+            $('#fq').removeClass('active');
+            $('#lt').addClass('active');
         }
     });
 
@@ -822,7 +915,7 @@ document.querySelectorAll('.dropdown-toggle').forEach(item => {
 </script>
 <script>
     // Set the date we're counting down to
-    var countDownDate = new Date("Sept 5, 2021 23:59:59").getTime();
+    var countDownDate = new Date("Sept 9, 2021 23:59:59").getTime();
     
     // Update the count down every 1 second
     var x = setInterval(function() {
