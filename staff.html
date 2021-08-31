@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GTEZRRVKR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-9GTEZRRVKR');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InspiHER{Tech} | IEEE WIE of SLTC</title>
+    <title>Staff | IEEE WIE of SLTC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        a{
+            text-decoration: none;
+        }
+        body{
+            background-image: url('img/purple_haze.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
         .profile-menu .dropdown-menu {
             right: 0;
             left: unset;
@@ -44,52 +61,1535 @@
         .bg-pink-half{
             background-color: #b9009a9e;
         }
+        .sub-heading{
+            color: #fff;
+            padding-top: 10rem;
+            font-size: 3rem;
+            font-family: 'Press Start 2P';
+        }
+        .team-code{
+            color: #fff;
+        }
+        .team-code hr{
+            background-color: #fff;
+        }
+        .footer-social{
+            background-color: #2a1144;
+            border-radius: 2rem 2rem 0 0;
+        }
+        .team-social {
+            font-size: 1.5rem ;
+        }
+        .team-social:hover{
+            color: #2a1144 !important;
+        }
+        .container{
+            background-color: #00000078;
+        }
+        @media (max-width: 991.98px) {
+            .filler{
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">InspiHer{TECH}</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Latest</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Prizes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu"> 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us <i class="fas fa-address-book text-primary"></i></a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-users text-warning"></i> Staff</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fab fa-github text-success"></i> Git Repo </a></li>
-                        </ul>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="45px" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" id="hm">Home</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu"> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us <i class="fas fa-address-book text-primary"></i></a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#"><i class="fas fa-users text-warning"></i> Staff</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/re4nightwing/InspiHER-TECH-SLTC-IEEE-WIE" target="_blank"><i class="fab fa-github text-success"></i> Git Repo </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
 
-
-    <!--Code goes here-->
-    <img src="https://cms-assets.tutsplus.com/uploads/users/107/posts/26488/final_image/41-space-scrolling-background850-2.jpg" alt="">
-
+    <div class=" container shadow-sm text-center">
+		<section style="margin: 0 auto; text-align: center;">
+			<h1 class="sub-heading">Staff</h1>
+		</section>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Project Academic Advisors</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-6 col-12 mx-1">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Sachintha.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Mr.Sachintha Balasooriya</h5>
+								<p class="card-text">
+									Project Academic Advisor
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/sachintha-balasooriya-2388b5191">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-12 mx-1">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+					  <div class="col-md-5">
+						<img src="img/oc/Dinithi_Shakya.jpg" alt="..." class="img-fluid filler"/>
+					  </div>
+					  <div class="col-md-7">
+						<div class="card-body">
+						  <h5 class="card-title">Ms.Dinithi Shakya</h5>
+						  <p class="card-text">
+							Project Academic Advisor
+						  </p>
+						  	<div class="team-social accessible">
+								<a class="social-button orange-hover" href="https://www.linkedin.com/in/shakya-rathnaike">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-12 mx-1">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+					  <div class="col-md-5">
+						<img src="img/oc/Surani Thissera.jpg" alt="..." class="img-fluid filler"/>
+					  </div>
+					  <div class="col-md-7">
+						<div class="card-body">
+						  <h5 class="card-title">Dr.Surani Thissera</h5>
+						  <p class="card-text">
+							Project Academic Advisor
+						  </p>
+						  <div class="team-social accessible">
+							<a class="social-button orange-hover" href="http://linkedin.com/in/surani-tissera-437b5a94">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Project Student Advisors</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Thimeth.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Thimeth Perera</h5>
+								<p class="card-text">
+									IEEE Student Branch of SLTC (Chairman)
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/thimethperera">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Michelle  Perera .jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Michelle Perera</h5>
+								<p class="card-text">
+									Chairman- IEEE WIE SB Affinity Group of SLTC
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/michelle-perera-7599251aa/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/michelle.pereraa">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Sakuni Punmina.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Sakuni Punmina</h5>
+								<p class="card-text">
+									Webmaster (SLTC WIE Affinity Group)
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/sakuni-punmina-7169621b0.">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/sakuni.punmina">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Geethaka.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Geethaka Shyamal Perera</h5>
+								<p class="card-text">
+									Project Student Advisor
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/geethaka-s-perera-433094a8/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Navodya.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Nawodya Ishan</h5>
+								<p class="card-text">
+									Project Student Advisor
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/nawodyaishan">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Sarindu Yapa.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Sarindu Shehan Yapa</h5>
+								<p class="card-text">
+									Project Student Advisor
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/sarindu.shehan.ym">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Thimira.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Timira Neranjana Jayasundara</h5>
+								<p class="card-text">
+									Project Student Advisor
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/timira-jayasundara-064b5a1b0 ">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/timira.neranjana/">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-around mt-3 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Achini Shashikala - Achini Madhuwanthi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Achini Shashikala</h5>
+								<p class="card-text">
+									Chairman
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/achini-shashikala-924b681b1">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Wathsala Divyanjalee.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Wathsala Divyanjalee</h5>
+								<p class="card-text">
+									Secretary
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="www.linkedin.com/in/wathsala-divyanjalee-48b7321b0">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Silojana - Silojana B7 A.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Silojana Jeyakumaran</h5>
+								<p class="card-text">
+									Assistant Secretary
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/silojana-jeyakumaran-907819203">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/siloo.2.9">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Pabasiprathibha sarathchandra.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Pabasi Sarathchandra </h5>
+								<p class="card-text">
+									Treasurer 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/pabasi-prathibha-sarathchandra-4a36a819b">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/pabasi.sarathchandra">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Program Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Minoli Ford.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Minoli Anna Ford</h5>
+								<p class="card-text">
+									Program Team - Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/minoli-ford-465a171a2">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/minoli.ford.7">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Dimuthu HarshaWijebandara.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Harsha Wijebandara </h5>
+								<p class="card-text">
+									Program team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/profile.php?id=100051494527792">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/20200601_222028 - Kushal Rathnathilaka.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Kushal Sandeep</h5>
+								<p class="card-text">
+									Program team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/kushal-rathnathilaka-70a06b1b0/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/kavindhyadhananjanee kurupitage.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Kavindhya Dhananjanee</h5>
+								<p class="card-text">
+									Program team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href=" https://www.linkedin.com/in/kavindhya-kurupitage-2250aa209/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/dhananji.kurupitage.1/">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Dinusha Herath - Z Art.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Dinusha Dilshani herath</h5>
+								<p class="card-text">
+									Program team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://m.facebook.com/dinushadilshani.herath">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0773 RAJAPAKSHA N.K._1.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Nethmi Rajapaksha</h5>
+								<p class="card-text">
+									Program team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/nethmi.rajapaksha.180">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Malaka.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Malaka S Gunawardhana</h5>
+								<p class="card-text">
+									Program team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/malaka.amunegedara">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Daneesha - Daneesha Perera.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Daneesha Perera</h5>
+								<p class="card-text">
+									Program team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/daneesha-perera-927342196">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0160 Malkini Wijesekara.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Malkini Wijesekara</h5>
+								<p class="card-text">
+									Program team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Pramila sathsarani B7 A.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Pramila Sathsarani</h5>
+								<p class="card-text">
+									Program team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Finance Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Kithmi K.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Kithmi Kavithma</h5>
+								<p class="card-text">
+									Finance Team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/kithmi-kavithma-6597961a4">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0015 Samadhi Sandeepani.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Samadhi Guruge</h5>
+								<p class="card-text">
+									Finance team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/sheki.thrishakya.3">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Coordination Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Theja Pramodi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Theja Pramodi Samarakoon</h5>
+								<p class="card-text">
+									Coordination Team - Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/theja-pramodi-2a1a89209">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/profile.php?id=100068508350346 ">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/PCD Sandaruwani.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Chavindi Dinelga Sandaruwani</h5>
+								<p class="card-text">
+									Coordination Team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/chavindi.dinelga">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0711 RUPASINGHE A.S..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Ashini Rupasinghe</h5>
+								<p class="card-text">
+									Coordination Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/ashini.rupasinghe.3">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0327 JAYASURIYA P.V.S.K..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Sanduni K. Jayasuriya</h5>
+								<p class="card-text">
+									Coordination Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/sanduni.jayasooriya.33">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/REHANI K.G.A.R._2.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Ransika Rehani</h5>
+								<p class="card-text">
+									Coordination Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/ransika-rehani-044b4021a">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0320 WICKRAMARATHNA U.A.G.H..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Harshani Wickramarathna</h5>
+								<p class="card-text">
+									Coordination Team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/udeshi - 21UG0433 RASANJANA W.A.D.U..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">W.A.D.U.Rasanjana</h5>
+								<p class="card-text">
+									Coordination Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/udeshi.wanniarachchi">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0426 HETTIARACHCHI O.G..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Gethmini Hettiarachchi</h5>
+								<p class="card-text">
+									Coordination Team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Design Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Lakitha.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Lakitha Dinuwan Madanayake</h5>
+								<p class="card-text">
+									Design Team - Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/lakitha-madanayake-9364b119b">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Sithum ihanga.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Sithum Vihanga</h5>
+								<p class="card-text">
+									Design Team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/sithum.v.flash">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Sandeepani Pieris  - ishadi sandeepani.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Ishadi Sandeepani Pieris</h5>
+								<p class="card-text">
+									Design Team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/ishadi-s-pieris-a464bb1a4">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/ishadis.pieris.5">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Kavindu.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Kavindu Keshan</h5>
+								<p class="card-text">
+									Design Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/kavindu.keshan.965">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0524 RUPASINGHE R.D.H..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Hansika Rupasinghe</h5>
+								<p class="card-text">
+									Design Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://linkedin.com/in/dulmini-rupasingha-89722b196">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/yohanisewmika/">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0264 Siwaneththi Dilushi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Dilushi Pabasara</h5>
+								<p class="card-text">
+									Design Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/dilushi.pabasara.9">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0018 Navodya Weerawardane.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Nimnee Navodya Weerawardana</h5>
+								<p class="card-text">
+									Design Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="http://www.linkedin.com/in/nimnee-navodya-weerawardana-2ba14921b">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Aditha Ayomal.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Aditha Ayomal Hewasurage</h5>
+								<p class="card-text">
+									Design Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/profile.php?id=100011108281934">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Kalana Shewon.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Shewon Fernando</h5>
+								<p class="card-text">
+									Design Team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Content Creation Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/DevindiGamlath - DevindiManimekala GamlathSenarathna.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Devindi Gamlath</h5>
+								<p class="card-text">
+									Content Creation Team - Head
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/devindi-gamlath-35531a1ab">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/devindi.gamlath ">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Chanushya Hettiarachchi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Chanushya Mandakini Hettiarachchi</h5>
+								<p class="card-text">
+									Content Creation Team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/chanushya-hettiarachchi-5361391a4">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/chanushya.hettiarachchi">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/laksisi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Laksisi Gunarathne</h5>
+								<p class="card-text">
+									Content Creation Team - Deputy Head 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/gunaratne.chetha/">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0308 KONARA K.A.D.D..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Deshika Dhananjani Konara</h5>
+								<p class="card-text">
+									Content Creation Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/deshika-dhananjani-257870213">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0223 Esana Kandanarachchi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Esana Kandanaarachchi</h5>
+								<p class="card-text">
+									Content Creation Team - Member 
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/esana.komudi.1">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0445 ATHAPATHTHU A.M.J.U..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">A.M.J.U.Athapaththu</h5>
+								<p class="card-text">
+									Content Creation Team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0326 WANIGASINGHE S.H.H._1.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Sesadee Wanigasinghe </h5>
+								<p class="card-text">
+									Content Creation Team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/rukshana B7 A.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">M.R.F.Rukshana</h5>
+								<p class="card-text">
+									Content Creation Team - Member 
+								</p>
+								<div class="team-social accessible">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Web Design Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Dulan Pabasara.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Dulan Pabasara</h5>
+								<p class="card-text">
+									Web Design Team - Head
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/dulan-pabasara-3a4475198/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/re4nightwingIG/">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Thumula.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Thumula Basura Suraweera</h5>
+								<p class="card-text">
+									Web Design Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/thumulabasura">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Manujaya vimukthi.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Manujaya Vimukthi</h5>
+								<p class="card-text">
+									Web Design Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/manujayavimukthi">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0127 Upeka Sathsarani.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Upeka Sathsarani</h5>
+								<p class="card-text">
+									Web Design Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/upeka-sathsarani-800b4221a">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/pp.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Pasindu Anjana Jayathunga</h5>
+								<p class="card-text">
+									Web Design Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/pasindu-anjana-5b854720b/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="team-code mt-4">
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 1px;">
+			<h2>Publicity Team</h2>
+			<hr style="color: black; margin: 0 auto; width: 40%; height: 3px;">
+		</div>
+		<div class="row justify-content-around mt-5 pb-5 img-row">
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Dilini Anuththara.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Anuththara Dharmadasa</h5>
+								<p class="card-text">
+									Publicity Team - Head
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/anuththara-dharmadasa-792329203">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/anu.dil.9849">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Sakila karunarathne B7 A.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Rinosha Dilhari Karunarathne </h5>
+								<p class="card-text">
+									Publicity Team - Deputy Head
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/profile.php?id=100018161441119">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/Dinesha Ranasinghe.jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Dinesha Ranasinghe</h5>
+								<p class="card-text">
+									Publicity Team - Deputy Head
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/dinesha-madhurangi-b33a3b1b0/">
+										<i class="fab fa-linkedin"></i>
+									</a>
+									<a class="social-button orange-hover" href="https://www.facebook.com/profile.php?id=100009271408322">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0704 HASANTHI T.V.C..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Chathurika Hasanthi</h5>
+								<p class="card-text">
+									Publicity Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/chathurika.vithanage.35">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0612 DANANJANEE K.K.H..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Heshara Dananjanee </h5>
+								<p class="card-text">
+									Publicity Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.linkedin.com/in/heshara-dananjanee-760247200">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-5 col-10">
+				<div class="card mb-3" style="max-width: 540px;">
+					<div class="row g-0">
+						<div class="col-md-5">
+							<img src="img/oc/21UG0613 HANSANI L.A.K..jpg" alt="..." class="img-fluid filler"/>
+						</div>
+						<div class="col-md-7">
+							<div class="card-body">
+								<h5 class="card-title">Akalanki Kavindya Hansani</h5>
+								<p class="card-text">
+									Publicity Team - Member
+								</p>
+								<div class="team-social accessible">
+									<a class="social-button orange-hover" href="https://www.facebook.com/kavindya.liyanage.14">
+										<i class="fab fa-facebook"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <footer>
+        <div class="text-center">
+            <div class="footer-social p-4">
+                <span style="font-size: 2em;" class="mx-2"><a href="https://www.facebook.com/sltcwie/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></span>
+                <span style="font-size: 2em;" class="mx-2"><a href="https://www.instagram.com/sltcwie/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></span>
+                <span style="font-size: 2em;" class="mx-2"><a href="https://twitter.com/sltcieeewie" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></span>
+                <span style="font-size: 2em;" class="mx-2"><a href="https://www.linkedin.com/company/ieee-wie-student-branch-affinity-group-of-sltc" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></span>
+                <h6 class="m-0 text-light">All rights reservered - SLTC IEEE WIE @2021</h6>
+                <h6 class="m-0 text-light"><i>Designed by: <a style="text-decoration: none;color: #6081bb;" href="https://github.com/re4nightwing">re4nightwing</a></i></h6>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
