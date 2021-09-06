@@ -11,12 +11,6 @@
     --text-purple: #470888;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    color: var(--glow-pink);
-}
-
 .bg-purple{
     background-color: var(--bg-purple);
 }
